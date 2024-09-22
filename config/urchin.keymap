@@ -97,10 +97,10 @@
 
         symbol1_layer {
             bindings = <
-  &kp GRAVE  &trans  &trans  &trans  &trans      &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT  &kp BACKSLASH
-  &trans     &trans  &trans  &trans  &kp ESC     &kp N9     &kp N1     &kp N2    &kp N3    &kp N4
-  &trans     &trans  &trans  &trans  &kp CAPS    &kp N0     &kp N5     &kp N6    &kp N7    &kp N8
-                             &trans  &trans      &trans     &trans
+  &kp GRAVE       &trans        &trans        &trans     &trans      &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT  &kp BACKSLASH
+  &sk LEFT_SHIFT  &sk LEFT_GUI  &sk LEFT_ALT  &sk LCTRL  &kp ESC     &kp N9     &kp N1     &kp N2    &kp N3    &kp N4
+  &trans          &trans        &trans        &trans     &kp CAPS    &kp N0     &kp N5     &kp N6    &kp N7    &kp N8
+                                              &trans     &trans      &trans     &trans
             >;
 
             label = "sym1";
@@ -141,10 +141,10 @@
         settings_layer {
             label = "settings";
             bindings = <
-  &bootloader  &none  &none  &bt BT_CLR  &bt BT_SEL 0    &bt BT_SEL 3  &none  &unstick  &none  &bootloader
-  &none        &none  &none  &none       &bt BT_SEL 1    &bt BT_SEL 4  &none  &none     &none  &none
-  &to 0        &none  &none  &none       &bt BT_SEL 2    &bt BT_SEL 5  &none  &none     &none  &to 0
-                             &none       &none           &none         &none
+  &bootloader  &bt BT_CLR_ALL  &bt BT_CLR  &none  &bt BT_SEL 0    &bt BT_SEL 3  &none  &unstick  &none  &bootloader
+  &none        &none           &none       &none  &bt BT_SEL 1    &bt BT_SEL 4  &none  &none     &none  &none
+  &to 0        &none           &none       &none  &bt BT_SEL 2    &bt BT_SEL 5  &none  &none     &none  &to 0
+                                           &none  &none           &none         &none
             >;
         };
     };
