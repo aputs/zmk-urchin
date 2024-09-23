@@ -119,10 +119,10 @@
 
         symbols2_layer {
             bindings = <
-  &kp GRAVE  &trans  &trans            &trans           &trans       &trans     &trans          &trans     &trans         &trans
-  &trans     &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACE  &kp GRAVE    &kp GRAVE  &kp MINUS       &kp EQUAL  &kp SEMICOLON  &kp SQT
-  &trans     &trans  &kp LEFT_BRACE    &kp RIGHT_BRACE  &kp TILDE    &kp TILDE  &kp UNDERSCORE  &kp PLUS   &kp COLON      &kp DOUBLE_QUOTES
-                                       &trans           &trans       &trans     &trans
+  &kp GRAVE  &trans  &trans            &trans             &trans       &trans     &trans          &trans     &trans         &trans
+  &trans     &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp GRAVE    &kp GRAVE  &kp MINUS       &kp EQUAL  &kp SEMICOLON  &kp SQT
+  &trans     &trans  &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp TILDE    &kp TILDE  &kp UNDERSCORE  &kp PLUS   &kp COLON      &kp DOUBLE_QUOTES
+                                       &trans             &trans       &trans     &trans
             >;
 
             label = "sym2";
