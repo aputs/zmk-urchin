@@ -7,6 +7,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/keys.h>
 
 #define BASE 0
 #define SYM 1
@@ -97,10 +98,10 @@
 
         symbol1_layer {
             bindings = <
-  &kp GRAVE       &trans        &trans        &trans     &trans      &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT  &kp BACKSLASH
-  &sk LEFT_SHIFT  &sk LEFT_GUI  &sk LEFT_ALT  &sk LCTRL  &kp ESC     &kp N9     &kp N1     &kp N2    &kp N3    &kp N4
-  &trans          &trans        &trans        &trans     &kp CAPS    &kp N0     &kp N5     &kp N6    &kp N7    &kp N8
-                                              &trans     &trans      &trans     &trans
+  &kp GRAVE       &trans          &trans        &trans           &trans      &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT  &kp BACKSLASH
+  &sk LEFT_SHIFT  &sk LEFT_GUI    &sk LEFT_ALT  &sk LCTRL        &kp ESC     &kp N9     &kp N1     &kp N2    &kp N3    &kp N4
+  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp CAPS    &kp N0     &kp N5     &kp N6    &kp N7    &kp N8
+                                                &trans           &trans      &trans     &trans
             >;
 
             label = "sym1";
@@ -108,10 +109,10 @@
 
         extra1_layer {
             bindings = <
-  &kp GRAVE  &trans  &trans  &trans  &trans    &trans          &trans          &trans        &trans           &trans
-  &trans     &trans  &trans  &trans  &trans    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans
-  &trans     &trans  &trans  &trans  &trans    &trans          &trans          &trans        &trans           &trans
-                             &trans  &trans    &trans          &trans
+  &kp GRAVE       &trans          &trans        &trans            &trans          &trans          &trans          &trans        &trans           &trans
+  &kt LEFT_SHIFT  &kt LEFT_GUI    &kt LEFT_ALT  &kt LEFT_CONTROL  &kp ESCAPE      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans
+  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW   &kp CAPSLOCK    &kp PAGE_UP     &kp HOME        &kp END       &kp PAGE_DOWN    &trans
+                                                &trans            &trans          &trans          &trans
             >;
 
             label = "extra1";
