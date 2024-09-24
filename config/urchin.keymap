@@ -11,6 +11,7 @@
 
 &sk {
     // don't release mods on other mods presses
+
     ignore-modifiers;
 };
 
@@ -103,7 +104,7 @@
   &kp GRAVE       &trans          &trans        &trans            &trans          &kp MINUS       &kp EQUAL       &kp LBKT      &kp RBKT         &kp DEL
   &sk LEFT_SHIFT  &sk LEFT_GUI    &sk LEFT_ALT  &sk LEFT_CONTROL  &kp ESCAPE      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp ENTER
   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW   &kp CAPSLOCK    &kp PAGE_UP     &kp HOME        &kp END       &kp PAGE_DOWN    &trans
-                                                &trans            &trans          &trans          &trans
+                                                &kp ESCAPE        &kp LCTRL       &trans          &trans
             >;
 
             label = "extra1";
