@@ -4,8 +4,10 @@ name: urchin
 type: shield
 url: https://github.com/aputs/zmk-urchin
 requires: [pro_micro]
+exposes: [i2c_oled]
 features:
   - keys
+  - display
 siblings:
   - urchin_left
   - urchin_right
