@@ -20,6 +20,7 @@
             quick-tap-ms = <200>;
             bindings = <&kp>, <&kp>;
         };
+
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -28,14 +29,17 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
+
         bhm: balanced_homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping-term-ms = <200>;nnnnnnnyynnnnn
+            tapping-term-ms = <200>;
+            nnnnnnnyynnnnn
             quick-tap-ms = <0>;
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
         };
+
         mo_tog: behavior_mo_tog {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -56,10 +60,17 @@
 
     combos {
         compatible = "zmk,combos";
-        combo_settings {
+
+        combo_settings1 {
             timeout-ms = <200>;
             key-positions = <21 22 23>;
             bindings = <&mo 5>;
+        };
+
+        combo_settings2 {
+            bindings = <&mo 5>;
+            key-positions = <26 27 28>;
+            timeout-ms = <200>;
         };
     };
 
@@ -89,8 +100,10 @@
 
         extra1_layer {
             bindings = <
-            label = "extra1";
-  &kp GRAVE       &trans          &trans        &trans            &trans          &kp MINUS       &kp EQUAL       &kp LBKT      &kp RBKT         &kp DEL
+
+            >;
+
+            &kp GRAVE       &trans          &trans        &trans            &trans          &kp MINUS       &kp EQUAL       &kp LBKT      &kp RBKT         &kp DEL
   &sk LEFT_SHIFT  &sk LEFT_GUI    &sk LEFT_ALT  &sk LEFT_CONTROL  &kp ESCAPE      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp ENTER
   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW   &kp CAPSLOCK    &kp PAGE_UP     &kp HOME        &kp END       &kp PAGE_DOWN    &trans
                                                 &kp ESCAPE        &kp LCTRL       &trans          &trans
@@ -99,14 +112,14 @@
 
         symbols2_layer {
             bindings = <
-            label = "sym2";
-  &kp GRAVE  &trans  &trans            &trans             &trans       &kp MINUS  &kp EQUAL       &kp LBKT   &kp RBKT       &kp BSLH
+
+            >;
+
+            &kp GRAVE  &trans  &trans            &trans             &trans       &kp MINUS  &kp EQUAL       &kp LBKT   &kp RBKT       &kp BSLH
   &trans     &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp GRAVE    &kp GRAVE  &kp MINUS       &kp EQUAL  &kp SEMICOLON  &kp SQT
   &trans     &trans  &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp TILDE    &kp TILDE  &kp UNDERSCORE  &kp PLUS   &kp COLON      &kp DOUBLE_QUOTES
                                        &trans             &trans       &trans     &trans
             >;
-
-
         };
 
         symbols3_layer {
