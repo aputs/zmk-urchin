@@ -89,20 +89,20 @@
         numbers_layer {
             label = "num";
             bindings = <
-  &trans          &trans          &trans        &trans            &trans    &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT  &kp BACKSLASH
-  &sk LEFT_SHIFT  &sk LEFT_GUI    &sk LEFT_ALT  &sk LEFT_CONTROL  &trans    &kp N9     &kp N1     &kp N2    &kp N3    &kp N4
-  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW   &trans    &kp N0     &kp N5     &kp N6    &kp N7    &kp N8
-                                                &trans            &trans    &trans     &gresc
+  &trans          &trans          &trans        &trans            &kp CAPSLOCK    &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT  &kp BACKSLASH
+  &sk LEFT_SHIFT  &sk LEFT_GUI    &sk LEFT_ALT  &sk LEFT_CONTROL  &kp TILDE       &kp N9     &kp N1     &kp N2    &kp N3    &kp N4
+  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW   &kp ESCAPE      &kp N0     &kp N5     &kp N6    &kp N7    &kp N8
+                                                &trans            &trans          &trans     &trans
             >;
         };
 
         navigation_layer {
             label = "navi";
             bindings = <
-  &trans          &trans        &trans        &trans            &trans       &kp MINUS       &kp EQUAL       &kp LBKT      &kp RBKT         &kp BACKSLASH
-  &sk LEFT_SHIFT  &sk LEFT_GUI  &sk LEFT_ALT  &sk LEFT_CONTROL  &trans       &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp ENTER
-  &trans          &trans        &trans        &trans            &trans       &kp PAGE_UP     &kp HOME        &kp END       &kp PAGE_DOWN    &kp DELETE
-                                              &gresc            &kp LCTRL    &trans          &trans
+  &trans          &trans          &trans        &trans            &kp CAPSLOCK    &kp MINUS       &kp EQUAL       &kp LBKT      &kp RBKT         &kp BACKSLASH
+  &sk LEFT_SHIFT  &sk LEFT_GUI    &sk LEFT_ALT  &sk LEFT_CONTROL  &kp TILDE       &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp ENTER
+  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW   &kp ESCAPE      &kp PAGE_UP     &kp HOME        &kp END       &kp PAGE_DOWN    &kp DELETE
+                                                &trans            &trans          &trans          &trans
             >;
         };
 
@@ -112,17 +112,17 @@
   &trans  &trans  &trans  &trans  &trans    &kp MINUS  &kp EQUAL       &kp LBKT   &kp RBKT       &kp BSLH
   &trans  &trans  &trans  &trans  &trans    &kp GRAVE  &kp MINUS       &kp EQUAL  &kp SEMICOLON  &kp SQT
   &trans  &trans  &trans  &trans  &trans    &kp TILDE  &kp UNDERSCORE  &kp PLUS   &kp COLON      &kp DOUBLE_QUOTES
-                          &gresc  &trans    &trans     &trans
+                          &trans  &trans    &trans     &trans
             >;
         };
 
         symbols2_layer {
             label = "sym2";
             bindings = <
-  &trans  &trans  &trans  &trans  &trans     &kp MINUS              &kp EQUAL        &kp LBKT     &kp RBKT       &kp BSLH
-  &trans  &trans  &trans  &trans  &trans     &kp LEFT_PARENTHESIS   &kp EXCLAMATION  &kp AT_SIGN  &kp HASH       &kp DOLLAR
-  &trans  &trans  &trans  &trans  &trans     &kp RIGHT_PARENTHESIS  &kp PERCENT      &kp CARET    &kp AMPERSAND  &kp ASTERISK
-                          &gresc  &kp TAB    &qt RIGHT_SHIFT SPACE  &kp BACKSPACE
+  &trans  &trans  &trans  &trans  &trans    &kp MINUS              &kp EQUAL        &kp LBKT     &kp RBKT       &kp BSLH
+  &trans  &trans  &trans  &trans  &trans    &kp LEFT_PARENTHESIS   &kp EXCLAMATION  &kp AT_SIGN  &kp HASH       &kp DOLLAR
+  &trans  &trans  &trans  &trans  &trans    &kp RIGHT_PARENTHESIS  &kp PERCENT      &kp CARET    &kp AMPERSAND  &kp ASTERISK
+                          &trans  &trans    &trans                 &trans
             >;
         };
 
