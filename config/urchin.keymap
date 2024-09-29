@@ -79,10 +79,10 @@
         default_layer {
             label = "base";
             bindings = <
-  &kp Q             &kp D           &kp R           &kp W        &kp B        &kp J        &kp F                &kp U      &kp P    &kp BSLH
-  &qt LEFT_SHIFT A  &qt LEFT_GUI S  &qt LEFT_ALT H  &lt 4 T      &lt 3 G      &kp Y        &kp N                &kp E      &kp O    &qt RIGHT_SHIFT I
-  &kp Z             &kp X           &kp M           &kp C        &kp V        &kp K        &kp L                &kp COMMA  &kp DOT  &kp SLASH
-                                                    &lt 3 ENTER  &lt 1 TAB    &lt 2 SPACE  &qt RCTRL BACKSPACE
+  &kp Q             &kp D           &kp R           &kp W        &kp B        &kp J        &kp F            &kp U      &kp P    &kp BSLH
+  &qt LEFT_SHIFT A  &qt LEFT_GUI S  &qt LEFT_ALT H  &lt 4 T      &lt 3 G      &kp Y        &kp N            &kp E      &kp O    &qt RIGHT_SHIFT I
+  &kp Z             &kp X           &kp M           &kp C        &kp V        &kp K        &kp L            &kp COMMA  &kp DOT  &kp SLASH
+                                                    &lt 3 ENTER  &lt 1 TAB    &lt 2 SPACE  &lt 3 BACKSPACE
             >;
         };
 
@@ -106,8 +106,8 @@
             >;
         };
 
-        symbols2_layer {
-            label = "sym2";
+        symbols1_layer {
+            label = "sym1";
             bindings = <
   &kp GRAVE  &trans  &trans            &trans             &trans       &kp MINUS  &kp EQUAL       &kp LBKT   &kp RBKT       &kp BSLH
   &trans     &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp GRAVE    &kp GRAVE  &kp MINUS       &kp EQUAL  &kp SEMICOLON  &kp SQT
@@ -116,8 +116,8 @@
             >;
         };
 
-        symbols3_layer {
-            label = "sym3";
+        symbols2_layer {
+            label = "sym2";
             bindings = <
   &trans  &trans        &trans        &trans  &trans     &kp MINUS              &kp EQUAL        &kp LBKT     &kp RBKT       &kp BSLH
   &trans  &sk LEFT_GUI  &sk LEFT_ALT  &trans  &trans     &kp LEFT_PARENTHESIS   &kp EXCLAMATION  &kp AT_SIGN  &kp HASH       &kp DOLLAR
@@ -143,6 +143,11 @@
         to3 {
             if-layers = <1 2>;
             then-layer = <3>;
+        };
+
+        to4 {
+            if-layers = <1 3>;
+            then-layer = <4>;
         };
     };
 };
