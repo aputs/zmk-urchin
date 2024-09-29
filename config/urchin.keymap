@@ -101,7 +101,7 @@
             bindings = <
   &trans  &trans  &trans  &trans      &trans       &kp MINUS       &kp EQUAL       &kp LBKT      &kp RBKT         &kp DEL
   &trans  &trans  &trans  &trans      &trans       &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp ENTER
-  &trans  &trans  &trans  &trans      &trans       &kp PAGE_UP     &kp HOME        &kp END       &kp PAGE_DOWN    &trans
+  &trans  &trans  &trans  &trans      &trans       &kp PAGE_UP     &kp HOME        &kp END       &kp PAGE_DOWN    &kp ESCAPE
                           &kp ESCAPE  &kp LCTRL    &trans          &trans
             >;
         };
@@ -134,6 +134,15 @@
   &trans       &none           &none       &none  &bt BT_SEL 2    &bt BT_SEL 5  &none  &none     &none              &trans
                                            &none  &kp CAPSLOCK    &kp CAPSLOCK  &none
             >;
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        to3 {
+            if-layers = <1 2>;
+            then-layer = <3>;
         };
     };
 };
