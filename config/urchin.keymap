@@ -119,8 +119,8 @@
             label = "sym2";
             bindings = <
   &kp GRAVE     &trans  &trans  &trans  &trans    &kp MINUS       &kp EQUAL  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH
-  &kp CAPSLOCK  &trans  &trans  &trans  &trans    &kp UNDERSCORE  &kp PLUS   &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp SINGLE_QUOTE
-  &kp ESCAPE    &trans  &trans  &trans  &trans    &kp MINUS       &kp EQUAL  &kp SEMI          &kp COLON          &kp DOUBLE_QUOTES
+  &kp CAPSLOCK  &trans  &trans  &trans  &trans    &kp UNDERSCORE  &kp MINUS  &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp SINGLE_QUOTE
+  &kp ESCAPE    &trans  &trans  &trans  &trans    &kp PLUS        &kp EQUAL  &kp SEMI          &kp COLON          &kp DOUBLE_QUOTES
                                 &trans  &trans    &trans          &trans
             >;
         };
