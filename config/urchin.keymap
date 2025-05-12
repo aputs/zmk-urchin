@@ -118,10 +118,10 @@
         symbols2_layer {
             label = "sym2";
             bindings = <
-  &kp GRAVE     &trans  &trans  &trans  &trans    &kp MINUS              &kp EQUAL      &kp LEFT_BRACKET   &kp RIGHT_BRACKET  &kp BACKSLASH
-  &kp CAPSLOCK  &trans  &trans  &trans  &trans    &kp LEFT_PARENTHESIS   &kp SEMICOLON  &kp SINGLE_QUOTE   &kp LEFT_BRACE     &kp RIGHT_BRACE
-  &kp ESCAPE    &trans  &trans  &trans  &trans    &kp RIGHT_PARENTHESIS  &kp COLON      &kp DOUBLE_QUOTES  &kp LEFT_BRACKET   &kp RIGHT_BRACKET
-                                &trans  &trans    &trans                 &trans
+  &kp GRAVE     &trans  &trans  &trans  &trans    &kp MINUS       &kp EQUAL  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH
+  &kp CAPSLOCK  &trans  &trans  &trans  &trans    &kp UNDERSCORE  &kp PLUS   &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp SINGLE_QUOTE
+  &kp ESCAPE    &trans  &trans  &trans  &trans    &kp MINUS       &kp EQUAL  &kp SEMI          &kp COLON          &kp DOUBLE_QUOTES
+                                &trans  &trans    &trans          &trans
             >;
         };
 
