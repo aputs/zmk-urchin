@@ -23,8 +23,8 @@
         bhm: balanced_homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping-term-ms = <250>;
-            quick-tap-ms = <0>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <200>;
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
         };
@@ -109,10 +109,10 @@
         symbols2_layer {
             label = "sym2";
             bindings = <
-  &kp GRAVE     &kp F1          &kp F2          &kp F3        &kp F4             &kp F5    &kp F6          &kp F7     &kp F8         &kp RC(BACKSLASH)
-  &kp CAPSLOCK  &kp LGUI        &kp LALT        &kp LCTRL     &kp LSHFT          &kp LBKT  &kp MINUS       &kp EQUAL  &kp SEMICOLON  &kp SINGLE_QUOTE
-  &kp ESCAPE    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW    &kp RBKT  &kp UNDERSCORE  &kp PLUS   &kp COLON      &kp DOUBLE_QUOTES
-                                                &trans        &trans             &trans    &trans
+  &kp GRAVE     &kp F1          &kp F2          &kp F3            &kp F4             &kp F5    &kp F6          &kp F7     &kp F8         &kp RC(BACKSLASH)
+  &kp CAPSLOCK  &kp LGUI        &kp LALT        &kp LCTRL         &kp LSHFT          &kp LBKT  &kp MINUS       &kp EQUAL  &kp SEMICOLON  &kp SINGLE_QUOTE
+  &kp ESCAPE    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW      &kp RIGHT_ARROW    &kp RBKT  &kp UNDERSCORE  &kp PLUS   &kp COLON      &kp DOUBLE_QUOTES
+                                                &kp LEFT_CONTROL  &kp LEFT_SHIFT     &trans    &trans
             >;
         };
 
