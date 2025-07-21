@@ -10,31 +10,13 @@
 
 / {
     behaviors {
-        qt: quick_tap {
+        hm: balanced_homerow_mods {
             compatible = "zmk,behavior-hold-tap";
-            label = "QUICK_TAP";
             #binding-cells = <2>;
-            flavor = "hold-preferred";
-            tapping-term-ms = <200>;
-            quick-tap-ms = <200>;
+            tapping-term-ms = <250>;
+            quick-tap-ms = <150>;
+            flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
-        };
-
-        bhm: balanced_homerow_mods {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick-tap-ms = <200>;
-            flavor = "balanced";
-            bindings = <&kp>, <&kp>;
-        };
-
-        mo_tog: behavior_mo_tog {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "hold-preferred";
-            tapping-term-ms = <200>;
-            bindings = <&mo>, <&tog>;
         };
     };
 
@@ -69,10 +51,10 @@
         qwerty {
             label = "base";
             bindings = <
-  &kp Q  &kp D            &kp R            &kp W                &kp B                &kp J               &kp F                 &kp U             &kp P             &kp BSLH
-  &kp A  &bhm LEFT_GUI S  &bhm LEFT_ALT H  &bhm LEFT_CONTROL T  &bhm LEFT_SHIFT G    &bhm RIGHT_SHIFT Y  &bhm RIGHT_CONTROL N  &bhm RIGHT_ALT E  &bhm RIGHT_GUI O  &kp I
-  &kp Z  &kp X            &kp M            &kp C                &kp V                &kp K               &kp L                 &kp COMMA         &kp DOT           &kp SLASH
-                                           &lt 2 ENTER          &lt 1 TAB            &lt 4 SPACE         &lt 3 BACKSPACE
+  &kp Q  &kp D           &kp R           &kp W               &kp B               &kp J              &kp F                &kp U            &kp P            &kp BSLH
+  &kp A  &hm LEFT_GUI S  &hm LEFT_ALT H  &hm LEFT_CONTROL T  &hm LEFT_SHIFT G    &hm RIGHT_SHIFT Y  &hm RIGHT_CONTROL N  &hm RIGHT_ALT E  &hm RIGHT_GUI O  &kp I
+  &kp Z  &kp X           &kp M           &kp C               &kp V               &kp K              &kp L                &kp COMMA        &kp DOT          &kp SLASH
+                                         &lt 2 ENTER         &lt 1 TAB           &lt 4 SPACE        &lt 3 BACKSPACE
             >;
         };
 
