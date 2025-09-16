@@ -91,8 +91,8 @@
         numpad_layer {
             label = "numpad";
             bindings = <
-  &to 0       &kp F1          &kp F2          &kp F3        &kp F4             &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_DIVIDE    &kp RC(KP_ASTERISK)
-  &tog 4      &kp LGUI        &kp LALT        &kp LCTRL     &kp LSHFT          &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_NUMBER_0  &kp KP_PLUS
+  &to 0       &kp F1          &kp F2          &kp F3        &kp F4             &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_DIVIDE    &kp KP_ASTERISK
+  &to 4       &kp LGUI        &kp LALT        &kp LCTRL     &kp LSHFT          &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_NUMBER_0  &kp KP_PLUS
   &kp ESCAPE  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT       &kp KP_ENTER
                                               &trans        &trans             &trans           &kp KP_NUMLOCK
             >;
